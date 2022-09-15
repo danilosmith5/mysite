@@ -1,0 +1,20 @@
+//Imports
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Mono&display=swap');
+
+$font1: 'Open Sans', sans-serif;
+$font2: 'Space Mono', monospace;
+
+body{
+    background-color: rgb(34, 31, 61);
+    color: rgb(127, 126, 148);
+    font-family: $font1;
+    font-weight: 400;
+}
+h1, h2, h3, h4{
+    color: rgb(198, 197, 219);
+    font-weight: 700;
+}
+span{
+    color: rgb(103, 230, 187);
+    font-family: $font2;
+}
