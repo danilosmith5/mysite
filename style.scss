@@ -6,7 +6,7 @@ $font2: 'Space Mono', monospace;
 
 $color1: rgb(175, 173, 204);
 $color2: rgb(103, 230, 187);
-$color3: rgb(34, 31, 61);
+$color3: rgb(22, 18, 54);
 $color4: rgb(127, 126, 148);
 
 body{
@@ -60,12 +60,11 @@ span{
     a{
         color: $color2;
     }
-    background-color: rgb(34, 31, 61, 0.5);
+    background-color: rgb(22, 18, 54, 0.5);
     backdrop-filter: blur(5px);
-    box-shadow: 0px 10px 10px rgb(34, 31, 61, 0.9);;
+    box-shadow: 0px 10px 10px rgb(22, 18, 54, 0.9);;
 }
 
 #hero{
     padding-top: 150px;
-    margin-bottom: 800px;
 }
