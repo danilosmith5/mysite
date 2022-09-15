@@ -1,20 +1,71 @@
 //Imports
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&family=Space+Mono&display=swap');
 
-$font1: 'Open Sans', sans-serif;
+$font1: 'Rubik', sans-serif;
 $font2: 'Space Mono', monospace;
 
+$color1: rgb(175, 173, 204);
+$color2: rgb(103, 230, 187);
+$color3: rgb(34, 31, 61);
+$color4: rgb(127, 126, 148);
+
 body{
-    background-color: rgb(34, 31, 61);
-    color: rgb(127, 126, 148);
+    background-color: $color3; 
+    color: $color4;
     font-family: $font1;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 0.9rem;
 }
 h1, h2, h3, h4{
     color: rgb(198, 197, 219);
     font-weight: 700;
 }
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1rem;
+}
+.navbar{
+    span{
+        font-size: 0.8rem;
+    }
+    a{
+        color: $color4 !important;
+        font-weight: 700;
+        &:hover{
+            color: white !important;
+        }
+    }
+    .active{
+        color: $color1 !important;
+    }
+}
 span{
     color: rgb(103, 230, 187);
     font-family: $font2;
+}
+.btn{
+    font-family: $font2;
+    color: $color2;
+    border-color: $color2;
+    &:hover{
+        background-color: $color2 !important;
+        color: $color3 !important;
+        border-color: $color2 !important;
+    }
+}
+.navbar{
+    color: $color1;
+    a{
+        color: $color2;
+    }
+    background-color: rgb(34, 31, 61, 0.5);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 10px 10px rgb(34, 31, 61, 0.9);;
+}
+
+#hero{
+    padding-top: 150px;
+    margin-bottom: 800px;
 }
