@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&family=Space+Mono&display=swap");
 body {
-  background-color: #161236;
-  color: #7f7e94;
+  background-color: rgb(22, 18, 54);
+  color: rgb(127, 126, 148);
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 0.9rem;
 }
 
 h1, h2, h3, h4 {
-  color: #c6c5db;
+  color: rgb(198, 197, 219);
   font-weight: 700;
 }
 
@@ -20,44 +20,48 @@ h2 {
   font-size: 1rem;
 }
 
+.wrapper-padidng {
+  padding: 50px;
+}
+
 .navbar span {
   font-size: 0.8rem;
 }
 .navbar a {
-  color: #7f7e94 !important;
+  color: rgb(127, 126, 148) !important;
   font-weight: 700;
 }
 .navbar a:hover {
   color: white !important;
 }
 .navbar .active {
-  color: #afadcc !important;
+  color: rgb(175, 173, 204) !important;
 }
 
 span {
-  color: #67e6bb;
+  color: rgb(103, 230, 187);
   font-family: "Space Mono", monospace;
 }
 
 .btn {
   font-family: "Space Mono", monospace;
-  color: #67e6bb;
-  border-color: #67e6bb;
+  color: rgb(103, 230, 187);
+  border-color: rgb(103, 230, 187);
 }
 .btn:hover {
-  background-color: #67e6bb !important;
-  color: #161236 !important;
-  border-color: #67e6bb !important;
+  background-color: rgb(103, 230, 187) !important;
+  color: rgb(22, 18, 54) !important;
+  border-color: rgb(103, 230, 187) !important;
 }
 
 .navbar {
-  color: #afadcc;
+  color: rgb(175, 173, 204);
   background-color: rgba(22, 18, 54, 0.5);
   backdrop-filter: blur(5px);
   box-shadow: 0px 10px 10px rgba(22, 18, 54, 0.9);
 }
 .navbar a {
-  color: #67e6bb;
+  color: rgb(103, 230, 187);
 }
 
 .navbar-toggler-icon {
@@ -86,7 +90,7 @@ span {
   width: 3px;
   height: 15px;
   border-radius: 10px;
-  background-color: #67e6bb;
+  background-color: rgb(103, 230, 187);
   position: absolute;
   top: 0;
 }
@@ -107,10 +111,30 @@ span {
   top: 9px;
 }
 
+.skills {
+  margin-bottom: 40px;
+}
+.skills span {
+  border: solid 1px rgb(103, 230, 187);
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .card {
-  background-color: #161236;
-  border: solid 1px #67e6bb;
+  background-color: rgb(22, 18, 54);
+  border: solid 1px rgb(103, 230, 187);
   text-align: center;
+}
+.card ul {
+  list-style: none;
+  padding: 0px;
+}
+.card li {
+  margin: 0px;
+  padding: 0px;
+}
+.card h4 {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
