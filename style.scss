@@ -8,6 +8,7 @@ $color1: rgb(175, 173, 204);
 $color2: rgb(103, 230, 187);
 $color3: rgb(22, 18, 54);
 $color4: rgb(127, 126, 148);
+$color5: rgb(39, 32, 94);
 
 body{
     background-color: $color3; 
@@ -26,6 +27,9 @@ h1{
 .wrapper-padding{
     padding: 100px;
     padding-top: 0px;
+}
+.header-section{
+    padding-top: 55px !important;
 }
 @media (max-width: 900px) {
     .wrapper-padding{
@@ -61,6 +65,27 @@ span{
         color: $color3 !important;
         border-color: $color2 !important;
     }
+}
+.btn-primary{
+    background-color: $color3;
+    color: $color2 !important;
+    &:hover{
+        color: $color3 !important;
+    }
+}
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: none;      
 }
 .navbar{
     color: $color1;
@@ -125,6 +150,7 @@ span{
         border: solid 1px $color2;
         padding: 5px;
         border-radius: 5px;
+        line-height: 50px;
     }
 }
 #skills{
@@ -135,6 +161,7 @@ span{
 .card{
     background-color: $color3;
     text-align: center;
+    margin-bottom: 30px;
     ul{
         list-style: none;
         padding: 0px;
@@ -154,18 +181,25 @@ span{
         margin-bottom: 30px;
         margin-top: 30px;
     }
-    .btn-primary{
-        background-color: $color3;
-        color: $color2 !important;
-        &:hover{
-            color: $color3 !important;
-        }
-    }
+
 }
 #portfolio{
     .card{
-        margin-bottom: 30px;
         border-color: $color2;
+    }
+}
+#contact{
+    .form-control{
+        background: none;
+        border: solid 1px $color2;
+        color: $color2;
+        margin-bottom: 30px;
+        &::placeholder{
+            color: $color2;
+        }
+    }
+    textarea{
+        height: 174px;
     }
 }
 .footer{
@@ -174,4 +208,7 @@ span{
         text-decoration: none;
         font-family: $font2;
     }
+}
+#contact{
+    margin-bottom: 150px;
 }
