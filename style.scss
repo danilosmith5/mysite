@@ -64,7 +64,56 @@ span{
     backdrop-filter: blur(5px);
     box-shadow: 0px 10px 10px rgb(22, 18, 54, 0.9);;
 }
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(103, 230, 187)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
 #hero{
-    padding-top: 150px;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+//Logoo
+.logo{
+    position: relative;
+    width: 140px;
+    height: 25px;
+    text-align: center;
+    padding-top: 3px;
+    h3{
+        font-size: 16px;
+        font-family: $font2;
+        font-weight: 200 !important;
+        text-transform: none;
+    }
+    .keys{
+        width: 3px;
+        height: 15px;
+        border-radius: 10px;
+        background-color: $color2;
+        position: absolute;
+        top: 0;
+    }
+    #key1{
+        rotate: 45deg;
+    }
+    #key2{
+        rotate: -45deg;
+        top: 9px;
+    }
+    #key3{
+        rotate: -45deg;
+        right: 0px;
+    }
+    #key4{
+        rotate: 45deg;
+        right: 0px;
+        top: 9px;
+    }
+
+}
+.card{
+    background-color: $color3;
+    border: solid 1px $color2;
+    text-align: center;
 }
