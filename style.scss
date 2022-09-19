@@ -14,7 +14,7 @@ body{
     color: $color4;
     font-family: $font1;
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 h1, h2, h3, h4{
     color: rgb(198, 197, 219);
@@ -23,11 +23,15 @@ h1, h2, h3, h4{
 h1{
     font-size: 3rem;
 }
-h2{
-    font-size: 1rem;
+.wrapper-padding{
+    padding: 100px;
+    padding-top: 0px;
 }
-.wrapper-padidng{
-    padding: 50px;
+@media (max-width: 900px) {
+    .wrapper-padding{
+        padding: 30px;
+        padding-top: 0px;
+    }
 }
 .navbar{
     span{
@@ -65,15 +69,15 @@ span{
     }
     background-color: rgb(22, 18, 54, 0.5);
     backdrop-filter: blur(5px);
-    box-shadow: 0px 10px 10px rgb(22, 18, 54, 0.9);;
+    box-shadow: 0px 10px 10px rgb(22, 18, 54, 0.5);;
 }
 .navbar-toggler-icon{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(103, 230, 187)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 #hero{
-    margin-top: 100px;
-    padding-bottom: 50px;
+    margin-top: 100px !important;
+    padding-bottom: 120px !important;
 }
 
 //Logoo
@@ -123,9 +127,13 @@ span{
         border-radius: 5px;
     }
 }
+#skills{
+    .card{
+        border: solid 1px $color2;
+    }
+}
 .card{
     background-color: $color3;
-    border: solid 1px $color2;
     text-align: center;
     ul{
         list-style: none;
@@ -135,7 +143,35 @@ span{
         margin: 0px;
         padding: 0px;
     }
-    h4{
+    h5{
         margin-bottom: 20px;
+        color: $color1;
+    }
+    .card-icon{
+        width: 60px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .btn-primary{
+        background-color: $color3;
+        color: $color2 !important;
+        &:hover{
+            color: $color3 !important;
+        }
+    }
+}
+#portfolio{
+    .card{
+        margin-bottom: 30px;
+        border-color: $color2;
+    }
+}
+.footer{
+    a{
+        color: $color1;
+        text-decoration: none;
+        font-family: $font2;
     }
 }
