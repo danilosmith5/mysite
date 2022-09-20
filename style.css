@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&family=Space+Mono&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: rgb(22, 18, 54);
-  color: rgb(127, 126, 148);
+  background-color: #161236;
+  color: #7f7e94;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 1rem;
 }
 
 h1, h2, h3, h4 {
-  color: rgb(198, 197, 219);
+  color: #c6c5db;
   font-weight: 700;
 }
 
@@ -35,38 +39,38 @@ h1 {
   font-size: 0.8rem;
 }
 .navbar a {
-  color: rgb(127, 126, 148) !important;
+  color: #7f7e94 !important;
   font-weight: 700;
 }
 .navbar a:hover {
   color: white !important;
 }
 .navbar .active {
-  color: rgb(175, 173, 204) !important;
+  color: #7f7e94 !important;
 }
 
 span {
-  color: rgb(103, 230, 187);
+  color: #67e6bb;
   font-family: "Space Mono", monospace;
 }
 
 .btn {
   font-family: "Space Mono", monospace;
-  color: rgb(103, 230, 187);
-  border-color: rgb(103, 230, 187);
+  color: #67e6bb;
+  border-color: #67e6bb;
 }
 .btn:hover {
-  background-color: rgb(103, 230, 187) !important;
-  color: rgb(22, 18, 54) !important;
-  border-color: rgb(103, 230, 187) !important;
+  background-color: #67e6bb !important;
+  color: #161236 !important;
+  border-color: #67e6bb !important;
 }
 
 .btn-primary {
-  background-color: rgb(22, 18, 54);
-  color: rgb(103, 230, 187) !important;
+  background-color: #161236;
+  color: #67e6bb !important;
 }
 .btn-primary:hover {
-  color: rgb(22, 18, 54) !important;
+  color: #161236 !important;
 }
 
 textarea:focus,
@@ -85,13 +89,13 @@ input[type=number]:focus,
 }
 
 .navbar {
-  color: rgb(175, 173, 204);
+  color: #afadcc;
   background-color: rgba(22, 18, 54, 0.5);
   backdrop-filter: blur(5px);
-  box-shadow: 0px 10px 10px rgba(22, 18, 54, 0.5);
+  box-shadow: 0px 10px 10px rgba(22, 18, 54, 0.8);
 }
 .navbar a {
-  color: rgb(103, 230, 187);
+  color: #67e6bb;
 }
 
 .navbar-toggler-icon {
@@ -120,7 +124,7 @@ input[type=number]:focus,
   width: 3px;
   height: 15px;
   border-radius: 10px;
-  background-color: rgb(103, 230, 187);
+  background-color: #67e6bb;
   position: absolute;
   top: 0;
 }
@@ -145,20 +149,22 @@ input[type=number]:focus,
   margin-bottom: 40px;
 }
 .skills span {
-  border: solid 1px rgb(103, 230, 187);
+  border: solid 1px #67e6bb;
   padding: 5px;
   border-radius: 5px;
   line-height: 50px;
 }
 
 #skills .card {
-  border: solid 1px rgb(103, 230, 187);
+  border: solid 1px #67e6bb;
+  min-height: 740px !important;
 }
 
 .card {
-  background-color: rgb(22, 18, 54);
+  background-color: #161236;
   text-align: center;
   margin-bottom: 30px;
+  min-height: 400px;
 }
 .card ul {
   list-style: none;
@@ -170,7 +176,7 @@ input[type=number]:focus,
 }
 .card h5 {
   margin-bottom: 20px;
-  color: rgb(175, 173, 204);
+  color: #afadcc;
 }
 .card .card-icon {
   width: 60px;
@@ -181,24 +187,24 @@ input[type=number]:focus,
 }
 
 #portfolio .card {
-  border-color: rgb(103, 230, 187);
+  border-color: #67e6bb;
 }
 
 #contact .form-control {
   background: none;
-  border: solid 1px rgb(103, 230, 187);
-  color: rgb(103, 230, 187);
+  border: solid 1px #67e6bb;
+  color: #67e6bb;
   margin-bottom: 30px;
 }
 #contact .form-control::placeholder {
-  color: rgb(103, 230, 187);
+  color: #67e6bb;
 }
 #contact textarea {
   height: 174px;
 }
 
 .footer a {
-  color: rgb(175, 173, 204);
+  color: #afadcc;
   text-decoration: none;
   font-family: "Space Mono", monospace;
 }
